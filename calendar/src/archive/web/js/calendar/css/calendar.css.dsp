@@ -67,11 +67,11 @@ ${z:setCWRCacheControl()}
 	border: 0;
 }
 .z-calendars-body {
-	background: ${mainBorderColor};
+//	background: ${mainBorderColor};
 	zoom:1;
 }
 .z-calendars-inner {
-	background: ${mainColor};
+//	background: ${mainColor};
 	padding-bottom: 5px;
 	padding-left: 5px;
 	margin: 0 1px;
@@ -288,17 +288,18 @@ ${z:setCWRCacheControl()}
 	white-space: nowrap;
 }
 .z-calendars-month-header {
-	color: ${fontColor};
+//	color: ${fontColor};
 	position: absolute;
 	top: 0;
 	left: 0;
 	table-layout: fixed;
 	width: 100%;
-	background-color: ${mainColor};
+//	background-color: ${mainColor};
 	line-height: 15px;
 }
 .z-calendars-month-header .z-calendars-day-of-week {
-	color: ${fontColor};
+//	color: ${fontColor};
+	color: #555555;
 	padding: 1px;
 	font-size: ${fontSizeMS};
 	font-family: ${fontFamilyT};
@@ -438,7 +439,7 @@ ${z:setCWRCacheControl()}
 .z-calevent-t1,
 .z-calevent-t2,
 .z-calevent-t3 {		
-	background: ${eventBorderColor};
+//	background: ${eventBorderColor};
 	font-size: 0;
 	line-height: 0;
 	margin: 0 2px;

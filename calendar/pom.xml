@@ -6,22 +6,27 @@
 	<groupId>org.zkoss.calendar</groupId>
 	<artifactId>calendar</artifactId>
 	<version>2.1.5</version>
+
 	<properties>
 		<zk.version>7.0.3</zk.version>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 		<packname>2.1.5</packname>
 	</properties>
+
 	<packaging>jar</packaging>
+
 	<name>The ZK Calendars</name>
 	<url>http://www.zkoss.org/calendars</url>
 	<description>The ZK Calendars</description>
-	<licenses>
+  
+  <licenses>
 		<license>
 			<name>GNU General Public License, Version 2.0</name>
 			<url>http://www.gnu.org/licenses/gpl.html</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
 	<pluginRepositories>
 		<pluginRepository>
 			<id>zkmaven</id>
@@ -29,6 +34,7 @@
 			<url>http://mavensync.zkoss.org/maven2/</url>
 		</pluginRepository>
 	</pluginRepositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.zkoss.zk</groupId>
@@ -37,6 +43,7 @@
 			<optional>true</optional>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<sourceDirectory>${project.basedir}/src</sourceDirectory>
 		<resources>
@@ -60,10 +67,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
+				<version>3.5</version>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<excludes>
 						<exclude>**/archive/**</exclude>
 					</excludes>
@@ -72,7 +79,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.3.1</version>
+				<version>2.6</version>
 				<configuration>
 					<archive>
 						<manifestFile>${project.basedir}/src/archive/META-INF/MANIFEST.MF</manifestFile>
@@ -82,7 +89,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.7</version>
+				<version>2.10.3</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
