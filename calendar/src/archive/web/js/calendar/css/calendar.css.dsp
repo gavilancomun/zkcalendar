@@ -81,7 +81,7 @@ ${z:setCWRCacheControl()}
 .z-calendars-t1,
 .z-calendars-t2,
 .z-calendars-t3 {		
-	background:${mainBorderColor};
+//	background:${mainBorderColor};
 	font-size: 0;
 	line-height: 0;
 	margin: 0 2px;
@@ -439,7 +439,7 @@ ${z:setCWRCacheControl()}
 .z-calevent-t1,
 .z-calevent-t2,
 .z-calevent-t3 {		
-//	background: ${eventBorderColor};
+	background: ${eventBorderColor};
 	font-size: 0;
 	line-height: 0;
 	margin: 0 2px;
