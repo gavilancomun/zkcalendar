@@ -43,19 +43,19 @@ ${z:setCWRCacheControl()}
 }
 .z-calendars-fl {
 	background: transparent no-repeat 0 bottom;
-	background-image: url(${c:encodeURL('~./img/shdlf.gif')});
+//	background-image: url(${c:encodeURL('~./img/shdlf.gif')});
 	padding-left: 6px;
 	zoom: 1;
 }
 .z-calendars-fr {
 	background: transparent no-repeat right bottom;
-	background-image: url(${c:encodeURL('~./img/shdrg.gif')});
+//	background-image: url(${c:encodeURL('~./img/shdrg.gif')});
 	padding-right: 6px;
 	zoom: 1;
 }
 .z-calendars-fm {
 	background: transparent repeat-x 0 0;
-	background-image: url(${c:encodeURL('~./img/shdmd.gif')});
+//	background-image: url(${c:encodeURL('~./img/shdmd.gif')});
 	height: 6px;
 	font-size: 0;
 	line-height: 0;
@@ -99,7 +99,7 @@ ${z:setCWRCacheControl()}
 .z-calendars-b1,
 .z-calendars-b2,
 .z-calendars-b3 {		
-	background: ${mainBorderColor};
+//	background: ${mainBorderColor};
 	font-size: 0;
 	line-height: 0;
 	margin: 0 2px;
@@ -313,6 +313,9 @@ ${z:setCWRCacheControl()}
 	left: 0;
 	background-color: white;
 }
+.z-calendars-month-body .z-calendars-month-week:last-child {
+	border-bottom: 1px solid ${separatorColor};
+}
 .z-calendars-month-week {
 	left: 0;
 	overflow: hidden;
@@ -327,9 +330,14 @@ ${z:setCWRCacheControl()}
 	table-layout: fixed;
 	position: absolute;
 }
+
 .z-calendars-day-of-month-bg td {
 	border-left: 1px solid ${separatorColor};
 }
+.z-calendars-day-of-month-bg td:last-child {
+	border-right: 1px solid ${separatorColor};
+}
+
 .z-calendars-day-of-month-body {
 	position: relative;
 	table-layout: fixed;
