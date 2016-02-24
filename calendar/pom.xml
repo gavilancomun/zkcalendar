@@ -3,7 +3,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>uk.co.his.zkoss.calendar</groupId>
+	<groupId>uk.co.his.zkoss</groupId>
 	<artifactId>calendar</artifactId>
 	<version>2.1.5.1</version>
 
@@ -11,6 +11,8 @@
 		<zk.version>7.0.3</zk.version>
 		<maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
 		<packname>2.1.5</packname>
+    <release.url>http://nexus.lan:8888/nexus/content/repositories/releases</release.url>
+    <snapshot.url>http://nexus.lan:8888/nexus/content/repositories/snapshots</snapshot.url>
 	</properties>
 
 	<packaging>jar</packaging>
@@ -177,6 +179,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+
 		<pluginManagement>
 			<plugins>
 				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
@@ -213,4 +216,17 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+ 
+  <distributionManagement>
+    <repository>
+      <id>releases</id>
+      <url>${release.url}</url>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>snapshots</id>
+      <url>${snapshot.url}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 </project> 
