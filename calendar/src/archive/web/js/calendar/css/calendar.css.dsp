@@ -313,9 +313,10 @@ ${z:setCWRCacheControl()}
 	left: 0;
 	background-color: white;
 }
-.z-calendars-month-body .z-calendars-month-week:last-child {
+.z-calendars-month-body .z-calendars-month-week:last-child .z-calendars-day-of-month-bg {
 	border-bottom: 1px solid ${separatorColor};
 }
+
 .z-calendars-month-week {
 	left: 0;
 	overflow: hidden;
