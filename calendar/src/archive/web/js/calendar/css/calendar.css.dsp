@@ -249,7 +249,7 @@ ${z:setCWRCacheControl()}
 	font-family: ${fontFamilyC};
 }
 .z-calendars-day-of-week-inner.z-calendars-week-today {
-	background-color: ${todayColor};
+//	background-color: ${todayColor};
 	border-color: #AAAA58 #F3F3C9 #F3F3C9 #AAAA58;
 	border-style: solid;
 	border-width: 1px;
@@ -366,11 +366,10 @@ ${z:setCWRCacheControl()}
 	background-color: #D4DCE1;
 }
 .z-calendars-month-date.z-calendars-week-today {
-	background-color: ${todayColor};
+//	background-color: ${todayColor};
 }
 .z-calendars-day-of-month-bg .z-calendars-week-today {
-	background-color: ${todayContentColor};
-
+//	background-color: ${todayContentColor};
 }
 <%-- Calendar Timezone --%>
 .z-calendars-timezone {
